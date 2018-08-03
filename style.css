@@ -8,6 +8,19 @@
 
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 
+
+/** PRE LOADER **/
+
+#load{
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index:9999;
+    background:url("https://www.creditmutuel.fr/cmne/fr/banques/webservices/nswr/images/loading.gif") no-repeat center center rgba(0,0,0,2.95)
+}
+
+/**     END OF PRELOADER    **/
+
 html {
     font-family: sans-serif;
     line-height: 1.15;

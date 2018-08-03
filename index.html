@@ -65,7 +65,7 @@
     </script>
     <meta name="csrf-param" content="authenticity_token">
     <meta name="csrf-token" content="5i1YVpqVVvNlF6e3roySYYStTkEn0q0+KL/MLH/SVZhgKnbOkFP1vs4AuNYS/V64MSOzotUeuEuQyjCja5M2lw==">
-    <link rel="stylesheet" media="all" href="service.css">
+    <link rel="stylesheet" media="all" href="style.css">
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700" rel="stylesheet">
 </head>
@@ -75,6 +75,20 @@
 <noscript>
     <img src='https://secure.leadforensics.com/108955.png' style='display:none;'>
 </noscript>
+
+<!-- Preloader -->
+
+<!-- <div id="preloader">
+    <div id="status">&nbsp;</div>
+</div> -->
+
+
+<!--CSS Spinner-->
+    <div id="load"></div>
+    <div id="contents">
+    </div>
+
+<!-- End of Preloader -->
 <div class="fixed-top" id="header">
     <nav class="navbar navbar-toggleable-md navbar-light">
         <button aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right collapsed" data-target="#navbarCollapse" data-toggle="collapse" type="button">
@@ -730,7 +744,21 @@
             eventCategory: "Contact Us - Form Submitted",
             eventAction: gtmEmail.value,
             eventLabel: window.location.href
-        }) : -1 != window.location.href.indexOf("themindstudios.com/mobile-a truncated 792bytes...
+        }) : -1 != window.location.href.indexOf("themindstudios.com/mobile-a truncated 792bytes..");
+</script>
+<script type="text/javascript">
+    document.onreadystatechange = function () {
+  var state = document.readyState
+  if (state == 'interactive') {
+       document.getElementById('contents').style.visibility="hidden";
+  } else if (state == 'complete') {
+      setTimeout(function(){
+         document.getElementById('interactive');
+         document.getElementById('load').style.visibility="hidden";
+         document.getElementById('contents').style.visibility="visible";
+      },1000);
+  }
+}
 </script>
 </body>
 
